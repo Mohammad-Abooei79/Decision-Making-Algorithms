@@ -1,0 +1,8 @@
+AHP_2 Guide:
+
+In this example, we are trying to compare 3 car models A, B, and C according to 4 criteria (cost, fuel, comfort, model).
+1- First, we create a dictionary for each criterion pairwise comparisons
+2-Then, we create a dictionary to compare the importance of criteria
+3- Next, we create the compare objects using the aforementioned dictionaries as input
+4- After that, we link compare objects into a hierarchy (criteria as parent and the rest as children)
+5- Finally, we call the report to see the result of the analysis  

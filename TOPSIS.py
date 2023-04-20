@@ -36,9 +36,7 @@ kwargs = {
 }
 
 # Build MCDM Executor
-wsm = exe.WSM(**kwargs) # Weighted Sum Method
 topsis = exe.Topsis(**kwargs) # Topsis 
-vikor = exe.Vikor(**kwargs) # Vikor 
 
 # show results
 print("TOPSIS Ranks")

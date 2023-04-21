@@ -1,0 +1,21 @@
+Step 1: Normalize the criteria values: Convert the original criteria values into a common scale using normalization methods such as min-max normalization or standardization.
+
+Step 2: Calculate the weighted normalized value: Multiply each normalized value by its corresponding weight to obtain the weighted normalized value.
+
+Step 3: Determine the "worst" and "best" solutions: Identify the "worst" and "best" solution for each criterion based on whether it is a benefit (maximization) or a cost (minimization) criterion.
+
+Step 4: Calculate the "S" and "R" values for each alternative: Calculate the "S" value and "R" value for each alternative using the "worst" and "best" solutions.
+
+    S value: sum(W(j) * (X(j+) - X(ij))) / (X(j+) - X(j-)) 
+    R (or P) value: max(W(j) * (X(j+) - X(ij))) / (X(j+) - X(j-))
+X(j+) is the value of the jth criterion in the best solution, X(j-) is the value of the jth criterion in the worst solution, and X(ij) is the normalized value of the jth criterion for the ith alternative.
+
+Step 5: Calculate the "Q" value for each alternative using the following formula:
+
+Q(i) = lambda * (S(i) - S(min)) / (S(max) - S(min)) + (1 - lambda) * (R(i) - R(min)) / (R(max) - R(min))
+
+where Q(i) is the "Q" value for the ith alternative, S(i) is the "S" value for the ith alternative, R(i) is the "R" value for the ith alternative, S(min) is the minimum "S" value among all alternatives, S(max) is the maximum "S" value among all alternatives, R(min) is the minimum "R" value among all alternatives, R(max) is the maximum "R" value among all alternatives, and lambda is the weight assigned to the "S" criterion (in majority of problems the value of lambda is 0.5).
+
+Step 6: Rank the alternatives: Rank the alternatives based on their Q values. The alternative with the lowest Q value is the best compromise solution.
+
+Step 7: Sensitivity analysis: Perform sensitivity analysis to check the robustness of the results.

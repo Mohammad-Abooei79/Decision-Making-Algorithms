@@ -1,0 +1,55 @@
+1. Normalize the decision matrix:
+
+    Calculate the normalized decision matrix by dividing each element in the original decision matrix by the corresponding column-wise root sum of squares (RSS):
+
+    Xij' = Xij / √( ∑(Xij)^2 )
+
+    where Xij is the original value in row i and column j of the decision matrix, and Xij' is the normalized value.
+
+2. Determine the weighted normalized decision matrix:
+
+    Multiply each normalized value by its corresponding weight to get the weighted normalized decision matrix:
+
+    Wij = Wj * Xij'
+
+    where Wj is the weight assigned to criterion j, and Wij is the weighted normalized value.
+
+3. Determine the ideal and anti-ideal solutions:
+
+    Find the ideal and anti-ideal solutions by taking the maximum and minimum values, respectively, for each column of the weighted normalized decision matrix (assuming that all of the criteria are beneficial):
+
+    A* = (A1*, A2*, ..., An*)
+    A- = (A1-, A2-, ..., An-)
+
+    where A* is the ideal solution vector, A- is the anti-ideal solution vector, and n is the number of criteria.
+
+    A1* = max{ W11, W21, ..., Wn1 }
+    A2* = max{ W12, W22, ..., Wn2 }
+    ...
+    An* = max{ W1n, W2n, ..., Wnn }
+
+    A1- = min{ W11, W21, ..., Wn1 }
+    A2- = min{ W12, W22, ..., Wn2 }
+    ...
+    An- = min{ W1n, W2n, ..., Wnn }
+
+4. Calculate the distance from each alternative to the ideal and anti-ideal solutions:
+
+    Calculate the Euclidean distance of each alternative to the ideal and anti-ideal solutions:
+
+    Si* = √( ∑(Wij - Aj*)^2 )
+    Si- = √( ∑(Wij - Aj-)^2 )
+
+    where Si* is the distance of alternative i to the ideal solution, Si- is the distance of alternative i to the anti-ideal solution, Wij is the weighted normalized value for alternative i and criterion j, Aj* is the jth component of the ideal solution vector, and Aj- is the jth component of the anti-ideal solution vector.
+
+5. Calculate the relative closeness to the ideal solution:
+
+    Calculate the relative closeness of each alternative to the ideal solution by dividing the distance to the anti-ideal solution by the sum of the distances to the ideal and anti-ideal solutions:
+
+    Ci = Si- / (Si* + Si-)
+
+    where Ci is the relative closeness of alternative i to the ideal solution.
+
+6. Rank the alternatives:
+
+    Rank the alternatives in descending order of their relative closeness values.

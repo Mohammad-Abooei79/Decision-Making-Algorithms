@@ -1,0 +1,22 @@
+The Simple Additive Weighting (SAW) method is a decision-making technique that involves identifying the criteria that are important in the decision-making process and assigning weights to these criteria. The SAW method is also known as the weighted sum model.
+
+The SAW method involves the following steps:
+
+    1. Identify the criteria: Determine the criteria that are relevant to the decision-making process. For example, in supplier selection, criteria might include cost, quality, delivery time, and customer service.
+
+    2. Assign weights to the criteria: Assign weights to each of the criteria based on their relative importance. The sum of the weights should add up to 1. For example, if cost is considered the most important criterion with a weight of 0.4, and quality is considered the second most important criterion with a weight of 0.3, the weight for delivery time and customer service might be 0.2 and 0.1, respectively.
+
+    Normalize the data: Normalize the data for each criterion by converting it to a common scale between 0 and 1. This is done using the following formula:
+
+    if it is a positive criterion => Xij = (Vij - min(j)) / (max(Xj) - min(Xj))
+    if it is a negative criterion => Xij = (max(Xj) - Vij) / (max(Xj) - min(Xj))
+
+    where Xij is the normalized value for the jth criterion of the ith supplier, Vij is the actual value of the jth criterion for the ith supplier, min(Xj) is the minimum value of the jth criterion among all suppliers, and max(Xj) is the maximum value of the jth criterion among all suppliers.
+
+    Calculate the weighted score: Calculate the weighted score for each supplier by multiplying the normalized value of each criterion by its weight and then summing up the results. The formula for the weighted score of supplier i is:
+
+    S(i) = w(1) Xi1 + w(2) Xi2 + ... + w(n) Xin
+
+    where S(i) is the weighted score for supplier i, w(j) is the weight assigned to the jth criterion, and Xij is the normalized value of the jth criterion for supplier i.
+
+    Rank the suppliers: Rank the suppliers based on their weighted scores, with the highest score being the best choice.

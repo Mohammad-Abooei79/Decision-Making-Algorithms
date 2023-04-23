@@ -1,0 +1,60 @@
+We want to select a car between Mercedes, BMW, Audi and McLaren based on their cost, speed, (fuel) consumption, power and weight using AHP method.
+The pairwise comparisons are as follows:
+
+Criteria comparison:
+            Cost | Speed | Consumption | Power | Weight
+--------------------------------------------------------           
+Cost        1.00  3.00      2.00         5.00    9.00
+Speed       0.33  1.00      0.50         3.00    6.00
+Consumption 0.50  2.00      1.00         3.00    5.00
+Power       0.20  0.33      0.33         1.00    4.00
+Weight      0.11  0.17      0.20         0.25    1.0
+
+cost comparison:
+            Mercedes | BMW | Audi | Mclaren 
+--------------------------------------------          
+Mercedes        1       1    0.33      3
+BMW             1       1    0.33      3
+Audi            3       3     1        5
+McLaren       0.33    0.33   0.2       1
+
+Speed comparison:
+            Mercedes | BMW | Audi | Mclaren 
+--------------------------------------------          
+Mercedes        1       2      5     0.33
+BMW            0.5      1      3     0.2
+Audi           0.2     0.33    1     0.14
+McLaren         3       5      7      1
+
+Consumption comparison
+            Mercedes | BMW | Audi | Mclaren 
+--------------------------------------------          
+Mercedes        1       1    0.33     3
+BMW             1       1    0.33     3
+Audi            3       3     1       5
+McLaren        0.33    0.33  0.2      1
+
+Power comparison:
+            Mercedes | BMW | Audi | Mclaren 
+--------------------------------------------          
+Mercedes        1       1    0.33     3
+BMW             1       1    0.33     3
+Audi            3       3     1       5
+McLaren        0.33    0.33  0.2      1
+
+Weight comparison:
+            Mercedes | BMW | Audi | Mclaren 
+--------------------------------------------          
+Mercedes        1       1    0.5      1
+BMW             1       1    0.5      1
+Audi            2       2     1       3
+McLaren         1       1    0.33     1
+
+
+
+
+
+
+
+
+

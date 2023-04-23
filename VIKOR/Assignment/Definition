@@ -1,0 +1,11 @@
+We want to hire an accountant between 4 candidates (A1, A2, A3, A4). 
+We would like to find the best candidate using VIKOR method based on these criteria: experience, number of skills (software), IELTS score, requested payment, speed and percision
+Here are the candidates scores in each criterion and weight of criteria:
+
+Candidate     Experience | Software | IELTS | Payment |   Speed   |   Percision 
+_________________________________________________________________________________
+   A1             5           2         7       10        Medium      Very High
+   A2             6           4         6       12        Medium         High
+   A3             8           3        8.5     10.5        High         Medium
+   A4            10           2        7.5      11       Very High       Low
+   W             0.2         0.3       0.1      0.2        0.1           0.1

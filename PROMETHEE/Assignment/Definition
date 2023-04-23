@@ -1,0 +1,13 @@
+Suppose we have a pastry shop and want to find a suitable supplier for baking materials.
+We want to find partial and total rankings using PROMETHEE method.
+Here are supplier rankings in each criterion and criteria weights:
+
+Supplier    Delivery Speed | Material Quality |   Cost   | Warranty length | Experince | Rating
+_________________________________________________________________________________________________
+   A1             105            Very High       Medium          23             15         4.5
+   A2             110              Medium         High           27             19         4.9
+   A3             100               High        Very High        30             12         4.2
+   A1             120              Medium        Medium          20             20         4.7
+ ________________________________________________________________________________________________
+ Weight           0.05              0.3            0.3           0.1            0.05       0.2
+   

@@ -1,6 +1,6 @@
 We want to hire an accountant between 4 candidates (A1, A2, A3, A4). 
 We would like to find the best candidate using TOPSIS method based on these criteria: experience, number of skills (software), IELTS score, requested payment, speed and percision
-Here are the candidates scores in each criterion and weight of criterai:
+Here are the candidates scores in each criterion and weight of criteria:
 
 Candidate     Experience | Software | IELTS | Payment |   Speed   |   Percision 
 _________________________________________________________________________________

@@ -1,0 +1,9 @@
+A production unit works in 3 shifts. The table below shows the minimum number of personnel required in 3-hour periods. Each worker starts their work at the beginning of a 3-hour period and works for 6 hours. People who work between 2 am and 8 am are paid 10 units per hour. The hourly wage is usually 7 units of money. The management of this production unit considers production goals in the following order of priority:
+a) Willingness to hire the minimum number of workers in each period of time
+b) Not paying more than 280 units per day
+c) The number of people in excess of the minimum number employed in each period should be minimized
+d) The number of people who start their work at 3 am should be minimized
+_____________________________________________________________________________
+|   Time Period   | 24-3 | 3-6 | 6-9 | 9-12 | 12-15 | 15-18 | 18-21 | 21-24 |
+-----------------------------------------------------------------------------
+| Minimum Workers |  5   |  7  |  15 | 21   |  22   |   12  |   7   |   3   | 
